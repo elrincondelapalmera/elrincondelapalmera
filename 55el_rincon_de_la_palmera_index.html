@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Rincón de la Palmera - Pastelería Artesanal en Coslada</title>
+  
+  <!-- PALABRAS CLAVE OCULTAS PARA BUSCADORES (SEO) -->
+  <meta name="keywords" content="Tartas Artesanales, Tartas artesanales Coslada, Tartas por encargo, Tartas tradicionales de toda la vida, Tartas personalizadas, Tarta bautizo, Tarta comunión, Tarta Selva Negra, Tarta Sacher, Tarta de almendra, Tarta Muerte por Chocolate, Tarta de fresa y nata, Tarta de yema tostada, Tarta San Marcos, Tarta Tiramisú, Hojaldre frambuesa, Tarta de zanahoria, Carrot Cake, Tarta Red Velvet, Tarta de Oreo, Tarta de queso casera, Tarta mousse de limón, Tarta tres chocolates, Las mejores Palmeritas de coslada, Las mejores palmeritas, Palmeritas jugositas, Palmeritas de hojaldre artesanales, Palmerita de fondant, Palmerita de pistacho, Palmerita de chocolate, Palmerita de limón, Palmerita Kinder, Palmerita frambuesa, Palmerita con dulce de leche, Palmerita de naranja, Palmerita lotus, Palmera grande fondant, Palmeritas de cereales y semillas, Sabor autentico, Sabor de la infancia, Milhojas merengue, Bamba con nata auténtica de toda la vida, Pepitos de crema y chocolate, Tartaleta de frambuesa, Porciones de tarta variadas para llevar, Pasteles artesanales, Pastas de té, Las mejores pastas de te, Cruasán de mantequilla, Napolitana de chocolate, napolitana de crema, Palmerita de chocolate tradicional, Magdalenas caseras, Tortel con chocolate, tortel de crema, Buñuelos artesanos, Buñuelos de viento">
+  <meta name="description" content="Pastelería artesanal en Coslada. Las mejores palmeritas jugositas, tartas personalizadas por encargo, tartas tradicionales, pasteles y bollería hecha a diario.">
+
+  <style>
+    :root {
+      --rosa-pastel: #FBF0F3;
+      --rosa-medio: #F4D3DC;
+      --turquesa-claro: #E0F2F1;
+      --turquesa-suave: #B2DFDB;
+      --turquesa-oscuro: #4DB6AC;
+      --texto-marron: #5A4A42;
+      --rosa-oscuro: #C27D90;
+      --blanco: #FFFFFF;
+      --sombra: rgba(90, 74, 66, 0.08);
+      --verde-whatsapp: #25D366;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { 
+      font-family: 'Georgia', serif; 
+      background-color: var(--rosa-pastel); 
+      color: var(--texto-marron); 
+      line-height: 1.6; 
+      padding-bottom: 80px; 
+    }
+
+    header {
+      background-color: var(--blanco);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 15px var(--sombra);
+      border-bottom: 3px solid var(--rosa-medio);
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    header h1 { font-size: 1.9rem; color: var(--rosa-oscuro); margin-bottom: 10px; font-style: italic; }
+
+    nav ul { list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; }
+
+    nav a {
+      text-decoration: none;
+      color: var(--texto-marron);
+      font-weight: bold;
+      background-color: var(--turquesa-claro);
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      border: 1px solid var(--turquesa-suave);
+    }
+
+    nav a:hover { background-color: var(--turquesa-suave); transform: translateY(-2px); }
+
+    .btn-carrito-nav {
+      background-color: var(--rosa-medio) !important;
+      color: var(--texto-marron) !important;
+      border: 1px solid var(--rosa-oscuro) !important;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-carrito { background-color: var(--rosa-oscuro); color: var(--blanco); border-radius: 50%; padding: 2px 7px; font-size: 0.8rem; }
+
+    .btn-flotante-carrito {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--verde-whatsapp);
+      color: white;
+      border-radius: 30px;
+      padding: 12px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: transform 0.2s ease, background 0.2s;
+    }
+
+    .btn-flotante-carrito:hover {
+      transform: scale(1.05);
+      background-color: #1EBE5D;
+    }
+
+    .badge-flotante {
+      background-color: white;
+      color: var(--texto-marron);
+      border-radius: 50%;
+      padding: 2px 8px;
+      font-size: 0.85rem;
+    }
+
+    .page-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px 10px;
+    }
+
+    .col-lateral {
+      flex: 0 0 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .main-content {
+      flex: 1;
+      max-width: 850px;
+    }
+
+    .foto-lateral {
+      width: 100%;
+      height: 230px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px var(--sombra);
+      border: 2px solid var(--rosa-medio);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .foto-lateral:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 1024px) {
+      .page-container {
+        flex-direction: column;
+      }
+      .col-lateral {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        padding-bottom: 12px;
+      }
+      .foto-lateral {
+        width: 200px;
+        height: 180px;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+      }
+    }
+
+    section { padding: 10px 0; }
+
+    .card {
+      background-color: var(--blanco);
+      padding: 35px;
+      border-radius: 18px;
+      border: 1px solid var(--rosa-medio);
+      box-shadow: 0 4px 15px var(--sombra);
+      margin-bottom: 30px;
+    }
+
+    h2 { color: var(--rosa-oscuro); margin-bottom: 20px; text-align: center; font-size: 1.7rem; border-bottom: 2px dashed var(--rosa-medio); padding-bottom: 10px; }
+
+    details { background-color: var(--rosa-pastel); margin-bottom: 15px; padding: 14px 18px; border-radius: 12px; border: 1px solid var(--rosa-medio); }
+    summary { font-weight: bold; font-size: 1.15rem; color: var(--texto-marron); cursor: pointer; outline: none; }
+
+    .item-producto { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dotted var(--rosa-medio); flex-wrap: wrap; gap: 10px; }
+    .item-producto:last-child { border-bottom: none; }
+
+    .nombre-prod { font-weight: bold; }
+    .precio-prod { color: var(--rosa-oscuro); font-weight: bold; margin-right: 10px; }
+
+    .details-producto {
+      background-color: var(--blanco);
+      border: 1px dashed var(--rosa-medio);
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .summary-producto {
+      font-size: 0.9rem;
+      color: var(--rosa-oscuro);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .foto-producto-interior {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+      border: 1px solid var(--rosa-medio);
+    }
+
+    select.opcion-prod, input.input-prod {
+      padding: 5px 8px;
+      border-radius: 8px;
+      border: 1px solid var(--rosa-medio);
+      font-family: inherit;
+      margin-right: 8px;
+      font-size: 0.9rem;
+    }
+
+    .btn-agregar {
+      background-color: var(--turquesa-suave);
+      color: var(--texto-marron);
+      border: none;
+      padding: 6px 14px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .btn-agregar:hover { background-color: var(--turquesa-oscuro); color: var(--blanco); }
+
+    .carrito-contenedor { background-color: #FAFAFA; border: 2px dashed var(--rosa-oscuro); border-radius: 15px; padding: 25px; margin-top: 20px; }
+    .lista-carrito { list-style: none; margin-bottom: 20px; }
+    .item-carrito-linea { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #EEEEEE; flex-wrap: wrap; gap: 8px; }
+
+    .btn-cant {
+      background: var(--turquesa-suave);
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 24px;
+      padding: 0;
+    }
+
+    .total-linea { font-size: 1.3rem; font-weight: bold; text-align: right; color: var(--rosa-oscuro); margin: 15px 0; }
+
+    .form-grupo { margin-bottom: 15px; }
+    .form-grupo label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.95rem; }
+    .form-grupo input, .form-grupo select, .form-grupo textarea { width: 100%; padding: 10px; border: 1px solid var(--rosa-medio); border-radius: 8px; font-family: inherit; font-size: 0.95rem; }
+
+    .btn-whatsapp {
+      width: 100%;
+      background-color: var(--verde-whatsapp);
+      color: var(--blanco);
+      border: none;
+      padding: 14px;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn-whatsapp:hover { background-color: #1EBE5D; }
+
+    .grid-resenas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .resena-card {
+      background-color: var(--rosa-pastel);
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid var(--rosa-medio);
+      font-size: 0.9rem;
+    }
+    .resena-estrellas { color: #FFD700; margin-bottom: 5px; }
+    .resena-autor { font-weight: bold; margin-top: 8px; color: var(--rosa-oscuro); text-align: right; }
+
+    .mapa-contenedor {
+      margin-top: 15px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--rosa-medio);
+    }
+
+    footer { background-color: var(--rosa-medio); text-align: center; padding: 35px 20px; margin-top: 40px; }
+    .boton-mapa { display: inline-block; background-color: var(--turquesa-suave); color: var(--texto-marron); padding: 10px 22px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; border: 1px solid var(--turquesa-oscuro); }
+    .nota-peso { font-size: 0.85rem; color: #777; font-style: italic; margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>El Rincón de la Palmera</h1>
+    <nav>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#temporada">Temporada</a></li>
+        <li><a href="#personalizadas">Tartas Personalizadas</a></li>
+        <li><a href="#resenas">Opiniones</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#visitanos">Visítanos</a></li>
+        <li><a href="#carrito" class="btn-carrito-nav">🛒 Mi Pedido <span class="badge-carrito" id="contador-carrito">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <a href="#carrito" class="btn-flotante-carrito">
+    🛒 Ver Pedido <span class="badge-flotante" id="badge-flotante-num">0</span>
+  </a>
+
+  <div class="page-container">
+
+    <!-- LATERAL IZQUIERDO -->
+    <aside class="col-lateral">
+      <img src="PAN.png.png" alt="Pan" class="foto-lateral">
+      <img src="BOLLRIA.jpg" alt="Bollería" class="foto-lateral">
+      <img src="MADALENAS-DE-LA-ABUELA.jpg" alt="Madalenas de la Abuela" class="foto-lateral">
+      <img src="PALMERITASM.jpg" alt="Palmeritas M" class="foto-lateral">
+      <img src="PASTELES-1.jpg" alt="Pasteles 1" class="foto-lateral">
+      <img src="PASTELES-2.jpg" alt="Pasteles 2" class="foto-lateral">
+      <img src="PASTELES-3_2.jpg.jpg" alt="Pasteles 3" class="foto-lateral">
+      <img src="Tarta personalizada eres magia.jpg" alt="Tarta Personalizada Eres Magia" class="foto-lateral">
+      <img src="Tarta personalizada spic.jpg" alt="Tarta Personalizada Personaje" class="foto-lateral">
+      <img src="IMG20241231183053.jpg" alt="Tarta Decorada con Fruta" class="foto-lateral">
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+      <section id="nosotros">
+        <div class="card">
+          <h2>Nosotros</h2>
+          <p>En El Rincón de la Palmera somos mucho más que una pastelería. Cada mañana, antes de que salga el sol , el aroma a mantequilla tostada y canela empieza a colarse por las calles, invitándote a seguirlo y a viajar directamente a tus mejores recuerdos.</p>
+          <br>
+          <p>Porque hay aromas que no se olvidan y pequeños detalles que se quedan para siempre con nosotros: el olor a pan recién hecho, a bizcocho de domingo, al bollo de la merienda... Esos olores que, sin darte cuenta, te llevan de vuelta a la infancia.</p>
+        </div>
+      </section>
+
+      <section id="productos">
+        <div class="card">
+          <h2>Productos (Haz tu pedido)</h2>
+
+          <!-- 1. PALMERITAS JUGOSITAS -->
+          <details open>
+            <summary>🌴 Palmeritas Jugositas (a 22,99 €/kg)</summary>
+            <div style="padding-top:10px;">
+              <p class="nota-peso">⚠️ Producto 100% artesanal: El peso final e importe exacto se calcularán al pesar la caja en báscula al recoger en tienda.</p>
+              <br>
+              
+              <div style="border-bottom: 1px dotted var(--rosa-medio); padding-bottom: 12px; margin-bottom: 12px;">
+                <div class="item-producto" style="border-bottom:none; padding-bottom: 2px;">
+                  <div>
+                    <span class="nombre-prod">Caja de 6 Palmeritas (350-400g aprox.)</span>
+                    <details class="details-producto">
+                      <summary class="summary-producto">📷 Ver foto</summary>
+                      <img src="IMG20260910110522.jpg" alt="Caja de 6 Palmeritas" class="foto-producto-interior">
+                    </details>
+                  </div>
+                  <div>
+                    <span class="precio-prod">~ 8,50 €</span>
+                    <button class="btn-agregar" onclick="agregarPalmeras6()">+ Añadir</button>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px;">
+                  <select id="sabor-palmera-6" class="opcion-prod">
+                    <option value="Variadas / Surtidas">Variadas / Surtidas</option>
+                    <option value="Kinder">Kinder</option>
+                    <option value="Fondant">Fondant</option>
+                    <option value="Black Panther">Black Panther</option>
+                    <option value="Dulce de Leche">Dulce de Leche</option>
+                    <option value="Nutella">Nutella</option>
+                    <option value="Lotus">Lotus</option>
+                    <option value="Choco Blanco">Choco Blanco</option>
+                    <option value="Choco Negro">Choco Negro</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Limón">Limón</option>
+                  </select>
+                  <input type="text" id="custom-palmera-6" placeholder="Opcional: Detallar (Ej: 2 Kinder, 2 Lotus...)" class="input-prod" style="flex:1; min-width: 200px;">
+                </div>
+              </div>
+
+              <div style="border-bottom: 1px dotted var(--rosa-medio); padding-bottom: 12px; margin-bottom: 12px;">
+                <div class="item-producto" style="border-bottom:none; padding-bottom: 2px;">
+                  <div>
+                    <span class="nombre-prod">Caja de 12 Palmeritas (750-900g aprox.)</span>
+                    <details class="details-producto">
+                      <summary class="summary-producto">📷 Ver foto</summary>
+                      <img src="12 palmeritas.jpg" alt="Caja de 12 Palmeritas" class="foto-producto-interior">
+                    </details>
+                  </div>
+                  <div>
+                    <span class="precio-prod">~ 18,50 €</span>
+                    <button class="btn-agregar" onclick="agregarPalmeras12()">+ Añadir</button>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 5px;">
+                  <select id="sabor-palmera-12" class="opcion-prod">
+                    <option value="Variadas / Surtidas">Variadas / Surtidas</option>
+                    <option value="Kinder">Kinder</option>
+                    <option value="Fondant">Fondant</option>
+                    <option value="Black Panther">Black Panther</option>
+                    <option value="Dulce de Leche">Dulce de Leche</option>
+                    <option value="Nutella">Nutella</option>
+                    <option value="Lotus">Lotus</option>
+                    <option value="Choco Blanco">Choco Blanco</option>
+                    <option value="Choco Negro">Choco Negro</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Limón">Limón</option>
+                  </select>
+                  <input type="text" id="custom-palmera-12" placeholder="Opcional: Detallar combinación" class="input-prod" style="flex:1; min-width: 200px;">
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Caja de 1 Kilo Palmeritas (Aprox.)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PALMERITAS.jpg" alt="Caja de 1 Kilo Palmeritas" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-palmera-1k" class="opcion-prod">
+                    <option value="Variadas / Surtidas">Variadas / Surtidas</option>
+                    <option value="Kinder">Kinder</option>
+                    <option value="Fondant">Fondant</option>
+                    <option value="Black Panther">Black Panther</option>
+                    <option value="Dulce de Leche">Dulce de Leche</option>
+                    <option value="Nutella">Nutella</option>
+                    <option value="Lotus">Lotus</option>
+                    <option value="Choco Blanco">Choco Blanco</option>
+                    <option value="Choco Negro">Choco Negro</option>
+                    <option value="Frambuesa">Frambuesa</option>
+                    <option value="Naranja">Naranja</option>
+                    <option value="Limón">Limón</option>
+                  </select>
+                  <span class="precio-prod">~ 22,99 €</span>
+                  <button class="btn-agregar" onclick="agregarConOpcion('Caja 1kg Palmeritas', 'sabor-palmera-1k', 22.99)">+ Añadir</button>
+                </div>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- 2. TARTAS CATÁLOGO CLÁSICO -->
+          <details>
+            <summary>🎂 Tartas Catálogo Clásico</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Almendra</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Almendras.jpg" alt="Tarta de Almendra" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">24,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta de Almendra', 24.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Yema Tostada</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta de Yema Tostada.jpg" alt="Tarta de Yema Tostada" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">24,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Yema Tostada', 24.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta San Marcos</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta San Marcos.jpg" alt="Tarta San Marcos" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">28,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta San Marcos', 28.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Nata y Chocolate</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Choco Nata.jpg" alt="Tarta de Nata y Chocolate" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">24,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Nata y Chocolate', 24.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Mango y Chocolate Blanco</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Choco Blanco y Mango.jpg" alt="Tarta de Mango y Chocolate Blanco" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">26,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Mango y Choco Blanco', 26.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Fresa</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta fresas  nata.jpg" alt="Tarta de Fresa" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">30,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta de Fresa', 30.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Tiramisú</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Tiramisu.jpg" alt="Tarta Tiramisú" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">30,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Tiramisú', 30.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Hojaldre y Frambuesa</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="tarta Hojaldre Frambuesas.jpg" alt="Tarta de Hojaldre y Frambuesa" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">30,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Hojaldre y Frambuesa', 30.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Muerte por Chocolate</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Muerte por Chocolate.jpg" alt="Tarta Muerte por Chocolate" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">26,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Muerte por Chocolate', 26.00)">+ Añadir</button></div>
+              </div>
+              
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Selva Negra</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Selva Negra.jpg" alt="Tarta Selva Negra" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="tamano-selva-negra" class="opcion-prod">
+                    <option value="Pequeña (6-8 raciones) - 24.00€">Pequeña (6-8 raciones) - 24,00 €</option>
+                    <option value="Mediana (8-10 raciones) - 26.00€">Mediana (8-10 raciones) - 26,00 €</option>
+                  </select>
+                  <button class="btn-agregar" onclick="agregarTartaConTamano('Tarta Selva Negra', 'tamano-selva-negra')">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Zanahoria (Carrot Cake)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="tarta zanahoria.jpg" alt="Tarta Zanahoria" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">29,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Zanahoria', 29.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Oreo</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta de Oreo.jpg" alt="Tarta Oreo" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="tamano-oreo" class="opcion-prod">
+                    <option value="Pequeña (6-8 raciones) - 24.00€">Pequeña (6-8 raciones) - 24,00 €</option>
+                    <option value="Grande (12 raciones) - 37.00€">Grande (12 raciones) - 37,00 €</option>
+                  </select>
+                  <button class="btn-agregar" onclick="agregarTartaConTamano('Tarta Oreo', 'tamano-oreo')">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Dulce de Leche</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Dulce de Leche.jpg" alt="Tarta Dulce de Leche" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="tamano-dulce-leche" class="opcion-prod">
+                    <option value="Pequeña (6-8 raciones) - 24.00€">Pequeña (6-8 raciones) - 24,00 €</option>
+                    <option value="Grande (12 raciones) - 37.00€">Grande (12 raciones) - 37,00 €</option>
+                  </select>
+                  <button class="btn-agregar" onclick="agregarTartaConTamano('Tarta Dulce de Leche', 'tamano-dulce-leche')">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Red Velvet</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta red velvet.jpg" alt="Tarta Red Velvet" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">29,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Red Velvet', 29.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Sacher</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="tarta sacher.jpg" alt="Tarta Sacher" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">26,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Sacher', 26.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Trufa</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta Choco Trufa.jpg" alt="Tarta Trufa" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">24,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Trufa', 24.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Virutas Chocolate</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="TARTA-VIRUTAS-CHOCOLATE_2.jpg.jpg" alt="Tarta Virutas Chocolate" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">26,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Virutas Chocolate', 26.00)">+ Añadir</button></div>
+              </div>
+              
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Queso</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta de queso.jpg" alt="Tarta de Queso" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-tarta-queso" class="opcion-prod">
+                    <option value="Tradicional - 28.00€">Tradicional - 28,00 €</option>
+                    <option value="Frambuesa - 29.00€">Frambuesa - 29,00 €</option>
+                    <option value="Pistacho - 36.00€">Pistacho - 36,00 €</option>
+                    <option value="Nutella - 37.00€">Nutella - 37,00 €</option>
+                    <option value="Lotus - 37.00€">Lotus - 37,00 €</option>
+                  </select>
+                  <button class="btn-agregar" onclick="agregarTartaQueso()">+ Añadir</button>
+                </div>
+              </div>
+
+              <!-- PRODUCTOS CON IMÁGENES VINCULADAS -->
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta de Chocolate y Arándanos</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta de chocolate y arandanos.jpg" alt="Tarta de Chocolate y Arándanos" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">26,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta de Chocolate y Arándanos', 26.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Mousse de Chocolate</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta mousee de chocolate.jpg" alt="Tarta Mousse de Chocolate" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">23,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Mousse de Chocolate', 23.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Mousse de Limón</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Mousse de Limon.jpg" alt="Tarta Mousse de Limón" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">19,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Mousse de Limón', 19.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Mousse de Frambuesa</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="MOUSSE QUESO FRAMBUESA.jpg" alt="Tarta Mousse de Frambuesa" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">19,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Mousse de Frambuesa', 19.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tarta Mousse Tres Chocolates</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tarta MousseTresChocolates.jpg" alt="Tarta Mousse Tres Chocolates" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">32,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tarta Mousse Tres Chocolates', 32.00)">+ Añadir</button></div>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- 3. POSTRES INDIVIDUALES Y PORCIONES -->
+          <details>
+            <summary>🧁 Postres Individuales y Porciones</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Milhojas Artesanal</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Milhojas Artesanal.jpg" alt="Milhojas Artesanal" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">3,65 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Milhojas Artesanal', 3.65)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tartaleta de Frambuesa</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PASTELES-3_2.jpg.jpg" alt="Tartaleta de Frambuesa" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">4,20 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Tartaleta de Frambuesa', 4.20)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Porción de Tartas Variadas</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="postre.jpg" alt="Porción de Tartas Variadas" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">3,95 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Porción de Tartas Variadas', 3.95)">+ Añadir</button></div>
+              </div>
+            </div>
+          </details>
+
+          <!-- 4. PASTELES ARTESANOS -->
+          <details>
+            <summary>🍰 Pasteles artesanos (a 34,50 €/kg)</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Bandeja de Pasteles Variados (250g)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PASTELES-1.jpg" alt="Bandeja de Pasteles Variados (250g)" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">8,63 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Bandeja de Pasteles Variados (250g)', 8.63)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Bandeja de Pasteles Variados (500g)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Bandeja de Pasteles Variados (12 uds).jpg" alt="Bandeja de Pasteles Variados (500g)" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">17,25 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Bandeja de Pasteles Variados (500g)', 17.25)">+ Añadir</button></div>
+              </div>
+            </div>
+          </details>
+
+          <!-- 5. PASTAS DE TÉ ARTESANALES -->
+          <details>
+            <summary>☕ Pastas de Té Artesanales (a 35 €/kg)</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Cajita de Pastas Variadas (250g)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Pastas de Té.jpg" alt="Cajita de Pastas Variadas" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">8,75 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pastas de Té 250g', 8.75)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Caja Mediana Pastas Variadas (500g)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Pastas de Té.jpg" alt="Caja Mediana Pastas Variadas" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">17,50 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pastas de Té 500g', 17.50)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Caja de 1 Kilo Pastas Variadas (1kg)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Pastas de Té.jpg" alt="Caja de 1 Kilo Pastas Variadas" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">35,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pastas de Té 1kg', 35.00)">+ Añadir</button></div>
+              </div>
+            </div>
+          </details>
+
+          <!-- 6. BOLLERÍA ARTESANA -->
+          <details>
+            <summary>🥐 Bollería Artesana</summary>
+            <div style="padding-top:10px;">
+              
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Cruasán de mantequilla</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="croissant.jpg" alt="Cruasán de mantequilla" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,80 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Cruasán de mantequilla', 1.80)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Napolitana</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Napolitana.jpg" alt="Napolitana" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-napolitana" class="opcion-prod">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Crema">Crema</option>
+                  </select>
+                  <span class="precio-prod">1,80 €</span>
+                  <button class="btn-agregar" onclick="agregarConOpcion('Napolitana', 'sabor-napolitana', 1.80)">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Palmera de chocolate</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Palmera de chocolate.jpg" alt="Palmera de chocolate" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">2,50 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Palmera de chocolate', 2.50)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Magdalenas de la Abuela</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Magdalenas de la Abuela.jpg" alt="Magdalenas de la Abuela" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">2,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Magdalenas de la Abuela', 2.00)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Tortel</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Tortel choco.jpg" alt="Tortel" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-tortel" class="opcion-prod">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Crema">Crema</option>
+                  </select>
+                  <span class="precio-prod">3,50 €</span>
+                  <button class="btn-agregar" onclick="agregarConOpcion('Tortel', 'sabor-tortel', 3.50)">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pepito</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PEPITO.jpg" alt="Pepito" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-pepito" class="opcion-prod">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Crema">Crema</option>
+                  </select>
+                  <span class="precio-prod">2,60 €</span>
+                  <button class="btn-agregar" onclick="agregarConOpcion('Pepito', 'sabor-pepito', 2.60)">+ Añadir</button>
+                </div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Bamba de Nata</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Bamba de Nata.jpg" alt="Bamba de Nata" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">2,65 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Bamba de Nata', 2.65)">+ Añadir</button></div>
+              </div>
+
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Trenza de Manzana y Canela</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="BOLLRIA.jpg" alt="Trenza de Manzana y Canela" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,80 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Trenza de Manzana y Canela', 1.80)">+ Añadir</button></div>
+              </div>
+
+            </div>
+          </details>
+
+          <!-- 7. SALADO -->
+          <details>
+            <summary>🥐 Salado (Empanadas Variadas)</summary>
+            <div style="padding-top:10px;">
+              <p style="color: #777; margin-bottom: 10px;">Empanadas artesanales horneadas a diario:</p>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Empanada Artesanal</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PASTELES-1.jpg" alt="Empanada Artesanal" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-empanada" class="opcion-prod">
+                    <option value="Atún">Atún</option>
+                    <option value="Carne de Ternera">Carne de Ternera</option>
+                    <option value="Pollo">Pollo</option>
+                    <option value="Bomba de Pollo con Salsa Barbacoa">Bomba de Pollo con Salsa Barbacoa</option>
+                    <option value="Carne y Queso Cheddar">Carne y Queso Cheddar</option>
+                  </select>
+                  <span class="precio-prod">2,65 €</span>
+                  <button class="btn-agregar" onclick="agregarConOpcion('Empanada', 'sabor-empanada', 2.65)">+ Añadir</button>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- 8. VELAS Y COMPLEMENTOS DE CELEBRACIÓN -->
+          <details>
+            <summary>🕯️ Velas y Complementos de Celebración</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <span class="nombre-prod">Vela de Número</span>
+                <div>
+                  <input type="text" id="num-vela" placeholder="Nº (ej: 5)" style="width: 70px;" class="input-prod">
+                  <span class="precio-prod">1,00 €</span>
+                  <button class="btn-agregar" onclick="agregarVelaNumero()">+ Añadir</button>
+                </div>
+              </div>
+              <div class="item-producto">
+                <span class="nombre-prod">Vela Feliz Cumpleaños</span>
+                <div><span class="precio-prod">2,25 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Vela Feliz Cumpleaños', 2.25)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <span class="nombre-prod">Set Velas de Globos (4 globos pequeños)</span>
+                <div><span class="precio-prod">2,00 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Set 4 Velas Globos', 2.00)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <span class="nombre-prod">Set Velitas Finas Especiales (6 uds.)</span>
+                <div><span class="precio-prod">1,80 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Set 6 Velitas Finas', 1.80)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <span class="nombre-prod">Mensaje de Chocolate Personalizado en Tarta</span>
+                <div>
+                  <input type="text" id="texto-mensaje-tarta" placeholder="Ej: Felicidades Ana" class="input-prod" style="width: 150px;">
+                  <span class="precio-prod">2,00 €</span>
+                  <button class="btn-agregar" onclick="agregarMensajeTarta()">+ Añadir</button>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- 9. PANES -->
+          <details>
+            <summary>🍞 Panes Artesanales</summary>
+            <div style="padding-top:10px;">
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Origen</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Origen" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">0,85 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Origen', 0.85)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Origen Plus</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Origen Plus" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">0,95 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Origen Plus', 0.95)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Campesina</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Campesina" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,05 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Campesina', 1.05)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Campesina Plus</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Campesina Plus" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,35 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Campesina Plus', 1.35)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Rústico</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Rústico" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,45 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Rústico', 1.45)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan de Tahona</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan de Tahona" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">0,85 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan de Tahona', 0.85)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Integral</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Integral" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,10 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Integral', 1.10)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Medio Pan Integral (Pequeño)</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Medio Pan Integral" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">0,65 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Medio Pan Integral', 0.65)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan de Chapata</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan de Chapata" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,50 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan de Chapata', 1.50)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan de Picos</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan de Picos" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,35 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan de Picos', 1.35)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Libreta</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Libreta" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,30 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Libreta', 1.30)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Colón</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Colón" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,40 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Colón', 1.40)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Gallego</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PAN.png.png" alt="Pan Gallego" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">1,40 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Gallego', 1.40)">+ Añadir</button></div>
+              </div>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Pan Abanico Artesanal</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="Abanico.jpg" alt="Pan Abanico Artesanal" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div><span class="precio-prod">2,50 €</span><button class="btn-agregar" onclick="agregarAlCarrito('Pan Abanico Artesanal', 2.50)">+ Añadir</button></div>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <!-- TEMPORADA -->
+      <section id="temporada">
+        <div class="card">
+          <h2>🍁 Especiales de Temporada</h2>
+          <details open>
+            <summary>✨ Buñuelos Artesanos (a 35,00 €/kg)</summary>
+            <div style="padding-top:10px;">
+              <p class="nota-peso">⚠️ Producto artesanal de temporada recién elaborado. El peso final e importe exacto se calcularán al pesar en báscula al recoger en tienda.</p>
+              <br>
+              <div class="item-producto">
+                <div>
+                  <span class="nombre-prod">Buñuelos Artesanos</span>
+                  <details class="details-producto">
+                    <summary class="summary-producto">📷 Ver foto</summary>
+                    <img src="PASTELES-1.jpg" alt="Buñuelos artesanos" class="foto-producto-interior">
+                  </details>
+                </div>
+                <div>
+                  <select id="sabor-bunuelos" class="opcion-prod">
+                    <option value="Nata">Nata</option>
+                    <option value="Crema">Crema</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Sin Relleno (Viento)">Sin Relleno (Viento)</option>
+                    <option value="Surtidos / Variados">Surtidos / Variados</option>
+                  </select>
+                  <select id="cantidad-bunuelos" class="opcion-prod">
+                    <option value="Bandeja 250g - 8.75€">Bandeja 250g - 8,75 €</option>
+                    <option value="Bandeja 500g - 17.50€">Bandeja 500g - 17,50 €</option>
+                    <option value="Caja 1kg - 35.00€">Caja 1kg - 35,00 €</option>
+                  </select>
+                  <button class="btn-agregar" onclick="agregarBunuelos()">+ Añadir</button>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- TARTAS PERSONALIZADAS -->
+      <section id="personalizadas">
+        <div class="card">
+          <h2>🎉 Tartas Personalizadas & Eventos</h2>
+          <p style="text-align: center; margin-bottom: 15px;">Diseña la tarta de tus sueños para Cumpleaños, Bautizos, Aniversarios y Comuniones.</p>
+          <p style="text-align: center; color: var(--rosa-oscuro); font-size: 0.85rem; font-weight: bold; margin-bottom: 20px;">⏱️ Requiere encargo previo con un mínimo de 48 horas de antelación.</p>
+          
+          <div class="form-grupo">
+            <label for="tipo-evento">Tipo de Evento:</label>
+            <select id="tipo-evento">
+              <option value="Cumpleaños">Cumpleaños</option>
+              <option value="Bautizo">Bautizo</option>
+              <option value="Aniversario">Aniversario</option>
+              <option value="Comunión">Comunión</option>
+              <option value="Otro Evento Especial">Otro Evento Especial</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="tamano-tarta">Tamaño y Raciones:</label>
+            <select id="tamano-tarta">
+              <option value="Pequeña (6-8 raciones)">Pequeña (6-8 raciones)</option>
+              <option value="Mediana (10-12 raciones)">Mediana (10-12 raciones)</option>
+              <option value="Grande (14-16 raciones)">Grande (14-16 raciones)</option>
+              <option value="Extra Grande (+20 raciones)">Extra Grande (+20 raciones)</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="sabor-bizcocho">Sabor de Bizcocho y Relleno:</label>
+            <select id="sabor-bizcocho">
+              <option value="Chocolate con Nata">Chocolate con Nata</option>
+              <option value="Zanahoria y Crema de Queso">Zanahoria y Crema de Queso</option>
+              <option value="Fresa y Nata">Fresa y Nata</option>
+              <option value="Nutella y Chocolate">Nutella y Chocolate</option>
+              <option value="Galletas Lotus">Galletas Lotus</option>
+              <option value="Red Velvet con Cream Cheese">Red Velvet con Cream Cheese</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="detalles-tematica">Detalles de la Temática, Nombre y Edad:</label>
+            <textarea id="detalles-tematica" rows="3" placeholder="Ej: Cumpleaños de Lucas, 5 años. Temática de superhéroes en colores azul y rojo."></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARRITO -->
+      <section id="carrito">
+        <div class="card">
+          <h2>🛒 Resumen de tu Pedido</h2>
+          
+          <div class="carrito-contenedor">
+            <ul id="lista-carrito" class="lista-carrito">
+              <p style="text-align: center; color: #888;">Tu carrito está vacío. ¡Añade tus productos favoritos arriba!</p>
+            </ul>
+
+            <div class="total-linea">Total: <span id="total-precio">0.00</span> €</div>
+
+            <div class="form-grupo">
+              <label for="nombre-cliente">Nombre Completo (*):</label>
+              <input type="text" id="nombre-cliente" placeholder="Ej: María García">
+            </div>
+
+            <div class="form-grupo">
+              <label for="fecha-recogida">Fecha y Hora de Recogida (*):</label>
+              <input type="datetime-local" id="fecha-recogida">
+              <small style="color: #777; font-size:0.8rem;">Comprobaremos que la fecha elegida esté dentro de nuestro horario de apertura.</small>
+            </div>
+
+            <div class="form-grupo">
+              <label for="notas-pedido">Notas Adicionales / Alergias:</label>
+              <textarea id="notas-pedido" rows="2" placeholder="Ej: Sin frutos secos, recoger por la mañana..."></textarea>
+            </div>
+
+            <button class="btn-whatsapp" onclick="enviarWhatsApp()">
+              📲 Enviar Pedido por WhatsApp
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEÑAS -->
+      <section id="resenas">
+        <div class="card">
+          <h2>⭐ Lo que opinan nuestros clientes</h2>
+          <div class="grid-resenas">
+            <div class="resena-card">
+              <div class="resena-estrellas">★★★★★</div>
+              <p>"Las palmeritas de Kinder son de otro mundo. Súper jugosas y el trato en la tienda de Coslada es inmejorable."</p>
+              <div class="resena-autor">— Laura M.</div>
+            </div>
+            <div class="resena-card">
+              <div class="resena-estrellas">★★★★★</div>
+              <p>"Encargamos una tarta de cumpleaños personalizada y quedó preciosa y riquísima. Repetiremos sin duda."</p>
+              <div class="resena-autor">— Carlos G.</div>
+            </div>
+            <div class="resena-card">
+              <div class="resena-estrellas">★★★★★</div>
+              <p>"El pan de tahona recién hecho por la mañana y las empanadas saladas son de 10. ¡Totalmente recomendado!"</p>
+              <div class="resena-autor">— Elena R.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HORARIOS -->
+      <section id="horarios">
+        <div class="card">
+          <h2>⏰ Horarios de Apertura</h2>
+          <div style="text-align: center; line-height: 2;">
+            <p><strong>Lunes a Viernes:</strong> 8:00 h – 15:00 h y 17:00 h – 20:00 h</p>
+            <p><strong>Sábados y Domingos:</strong> 8:00 h – 15:00 h</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- VISÍTANOS -->
+      <section id="visitanos">
+        <div class="card" style="text-align: center;">
+          <h2>📍 Visítanos</h2>
+          <p><strong>EL RINCÓN DE LA PALMERA</strong></p>
+          <p>C. de Venezuela, 13, 28823 Coslada, Madrid</p>
+          <a href="https://maps.app.goo.gl/ZTSFDUeNrqFkr1da6" target="_blank" rel="noopener noreferrer" class="boton-mapa">🗺️ Abrir en Google Maps</a>
+          
+          <div class="mapa-contenedor">
+            <iframe 
+              src="https://www.google.com/maps?q=EL+RINCÓN+DE+LA+PALMERA,+C.+de+Venezuela,+13,+28823+Coslada,+Madrid&output=embed" 
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- LATERAL DERECHO -->
+    <aside class="col-lateral">
+      <img src="PALMERITAS.jpg" alt="Palmeritas" class="foto-lateral">
+      <img src="PASTELES-PIONONOS_2.jpg.jpg" alt="Pasteles Piononos" class="foto-lateral">
+      <img src="TARTA-ANIVERSARIO.jpg" alt="Tarta Aniversario" class="foto-lateral">
+      <img src="Tarta Muerte por Chocolate.jpg" alt="Tarta Muerte por Chocolate" class="foto-lateral">
+      <img src="TARTA-PERSONALIZADA-CORAZON.jpg" alt="Tarta Personalizada Corazón" class="foto-lateral">
+      <img src="Tarta San Marcos.jpg" alt="Tarta San Marcos" class="foto-lateral">
+      <img src="TARTA-SELVA-NEGRA-GRANDE.jpg" alt="Tarta Selva Negra Grande" class="foto-lateral">
+      <img src="Tarta Choco Trufa.jpg" alt="Tarta Trufa" class="foto-lateral">
+      <img src="TARTA-VIRUTAS-CHOCOLATE_2.jpg.jpg" alt="Tarta Virutas Chocolate" class="foto-lateral">
+      <img src="IMG20250507074228.jpg" alt="Tarta de Aniversario 50" class="foto-lateral">
+      <img src="IMG20260424173539.jpg" alt="Bocaditos de Chocolate" class="foto-lateral">
+      <img src="IMG20260424200829.jpg" alt="Caja de Cupcakes Variados" class="foto-lateral">
+      <img src="FB_IMG_1773874360670.jpg" alt="Tarta Infantil Zoe" class="foto-lateral">
+      <img src="IMG_20220911_222402.jpg" alt="Tarta Decorada con Flores Naturales" class="foto-lateral">
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>© El Rincón de la Palmera - Pastelería Artesanal en Coslada</p>
+    <p style="font-size: 0.85rem; margin-top: 5px; opacity: 0.8;">Sabor tradicional horneado con amor cada día.</p>
+  </footer>
+
+  <script>
+    let carrito = [];
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const fechaInput = document.getElementById('fecha-recogida');
+      if (fechaInput) {
+        const ahora = new Date();
+        ahora.setMinutes(ahora.getMinutes() - ahora.getTimezoneOffset());
+        fechaInput.min = ahora.toISOString().slice(0, 16);
+      }
+    });
+
+    function actualizarCarrito() {
+      const listaEl = document.getElementById('lista-carrito');
+      const totalEl = document.getElementById('total-precio');
+      const contadorEl = document.getElementById('contador-carrito');
+      const badgeFlotante = document.getElementById('badge-flotante-num');
+
+      listaEl.innerHTML = '';
+
+      if (carrito.length === 0) {
+        listaEl.innerHTML = '<p style="text-align: center; color: #888;">Tu carrito está vacío. ¡Añade tus productos favoritos arriba!</p>';
+        totalEl.textContent = '0.00';
+        contadorEl.textContent = '0';
+        badgeFlotante.textContent = '0';
+        return;
+      }
+
+      let total = 0;
+      let cantidadTotal = 0;
+
+      carrito.forEach((item, index) => {
+        const subtotal = item.precio * item.cantidad;
+        total += subtotal;
+        cantidadTotal += item.cantidad;
+
+        const li = document.createElement('li');
+        li.className = 'item-carrito-linea';
+        li.innerHTML = `
+          <div>
+            <strong>${item.nombre}</strong><br>
+            <small style="color:#777;">${item.precio.toFixed(2)} € c/u</small>
+          </div>
+          <div>
+            <button class="btn-cant" onclick="cambiarCantidad(${index}, -1)">-</button>
+            <span style="margin: 0 8px; font-weight: bold;">${item.cantidad}</span>
+            <button class="btn-cant" onclick="cambiarCantidad(${index}, 1)">+</button>
+            <span style="margin-left: 15px; font-weight: bold; color: var(--rosa-oscuro);">${subtotal.toFixed(2)} €</span>
+          </div>
+        `;
+        listaEl.appendChild(li);
+      });
+
+      totalEl.textContent = total.toFixed(2);
+      contadorEl.textContent = cantidadTotal;
+      badgeFlotante.textContent = cantidadTotal;
+    }
+
+    function agregarAlCarrito(nombre, precio) {
+      const existe = carrito.find(item => item.nombre === nombre);
+      if (existe) {
+        existe.cantidad++;
+      } else {
+        carrito.push({ nombre, precio, cantidad: 1 });
+      }
+      actualizarCarrito();
+    }
+
+    function agregarConOpcion(nombreBase, selectId, precio) {
+      const select = document.getElementById(selectId);
+      const opcion = select.value;
+      const nombreCompleto = `${nombreBase} (${opcion})`;
+      agregarAlCarrito(nombreCompleto, precio);
+    }
+
+    function agregarPalmeras6() {
+      const select = document.getElementById('sabor-palmera-6').value;
+      const custom = document.getElementById('custom-palmera-6').value.trim();
+      let detalle = select;
+      if (custom !== '') detalle += ` - Extra: ${custom}`;
+      agregarAlCarrito(`Caja 6 Palmeritas (${detalle})`, 8.50);
+    }
+
+    function agregarPalmeras12() {
+      const select = document.getElementById('sabor-palmera-12').value;
+      const custom = document.getElementById('custom-palmera-12').value.trim();
+      let detalle = select;
+      if (custom !== '') detalle += ` - Extra: ${custom}`;
+      agregarAlCarrito(`Caja 12 Palmeritas (${detalle})`, 18.50);
+    }
+
+    function agregarBunuelos() {
+      const sabor = document.getElementById('sabor-bunuelos').value;
+      const cantVal = document.getElementById('cantidad-bunuelos').value;
+      const partes = cantVal.split(' - ');
+      const tamano = partes[0];
+      const precio = parseFloat(partes[1].replace('€', '').trim());
+      agregarAlCarrito(`Buñuelos Artesanos ${sabor} [${tamano}]`, precio);
+    }
+
+    function agregarTartaConTamano(nombreBase, selectId) {
+      const val = document.getElementById(selectId).value;
+      const partes = val.split(' - ');
+      const tamano = partes[0];
+      const precio = parseFloat(partes[1].replace('€', '').trim());
+      agregarAlCarrito(`${nombreBase} [${tamano}]`, precio);
+    }
+
+    function agregarTartaQueso() {
+      const val = document.getElementById('sabor-tarta-queso').value;
+      const partes = val.split(' - ');
+      const sabor = partes[0];
+      const precio = parseFloat(partes[1].replace('€', '').trim());
+      agregarAlCarrito(`Tarta de Queso (${sabor})`, precio);
+    }
+
+    function agregarVelaNumero() {
+      const num = document.getElementById('num-vela').value.trim();
+      const txt = num ? `Vela Número (${num})` : 'Vela de Número';
+      agregarAlCarrito(txt, 1.00);
+    }
+
+    function agregarMensajeTarta() {
+      const txt = document.getElementById('texto-mensaje-tarta').value.trim();
+      const msj = txt ? `Mensaje en Tarta: "${txt}"` : 'Mensaje Personalizado en Tarta';
+      agregarAlCarrito(msj, 2.00);
+    }
+
+    function cambiarCantidad(index, delta) {
+      carrito[index].cantidad += delta;
+      if (carrito[index].cantidad <= 0) {
+        carrito.splice(index, 1);
+      }
+      actualizarCarrito();
+    }
+
+    function validarHorario(fechaStr) {
+      const fecha = new Date(fechaStr);
+      const dia = fecha.getDay();
+      const hora = fecha.getHours() + (fecha.getMinutes() / 60);
+
+      if (dia >= 1 && dia <= 5) {
+        return (hora >= 8.0 && hora <= 15.0) || (hora >= 17.0 && hora <= 20.0);
+      }
+      if (dia === 6 || dia === 0) {
+        return hora >= 8.0 && hora <= 15.0;
+      }
+      return false;
+    }
+
+    function enviarWhatsApp() {
+      const nombre = document.getElementById('nombre-cliente').value.trim();
+      const fechaVal = document.getElementById('fecha-recogida').value;
+      const notas = document.getElementById('notas-pedido').value.trim();
+      const detallesTarta = document.getElementById('detalles-tematica').value.trim();
+
+      if (!nombre) {
+        alert('Por favor, introduce tu nombre.');
+        return;
+      }
+
+      if (!fechaVal) {
+        alert('Por favor, selecciona una fecha y hora de recogida.');
+        return;
+      }
+
+      if (!validarHorario(fechaVal)) {
+        alert('La hora de recogida elegida está fuera de nuestro horario comercial:\n\n• Lunes a Viernes: 8:00 a 15:00 y 17:00 a 20:00\n• Sábados y Domingos: 8:00 a 15:00');
+        return;
+      }
+
+      if (detallesTarta) {
+        const fechaSeleccionada = new Date(fechaVal);
+        const ahora = new Date();
+        const diferenciaHoras = (fechaSeleccionada - ahora) / (1000 * 60 * 60);
+
+        if (diferenciaHoras < 48) {
+          alert('Las tartas personalizadas requieren realizar el pedido con al menos 48 horas de antelación.');
+          return;
+        }
+      }
+
+      if (carrito.length === 0 && !detallesTarta) {
+        alert('El carrito está vacío. Añade algún producto o rellena la solicitud de tarta personalizada antes de enviar.');
+        return;
+      }
+
+      let mensaje = `*¡Hola! Quiero realizar un pedido en El Rincón de la Palmera:*\n\n`;
+      mensaje += `👤 *Cliente:* ${nombre}\n`;
+      if (fechaVal) mensaje += `📅 *Recogida:* ${fechaVal.replace('T', ' ')}\n`;
+
+      if (carrito.length > 0) {
+        mensaje += `\n📋 *Detalle del Pedido:*\n`;
+        let total = 0;
+        carrito.forEach(item => {
+          const sub = item.precio * item.cantidad;
+          total += sub;
+          mensaje += `• ${item.cantidad}x ${item.nombre} - ${sub.toFixed(2)}€\n`;
+        });
+        mensaje += `\n💰 *Total Aprox:* ${total.toFixed(2)}€\n`;
+      }
+
+      const evento = document.getElementById('tipo-evento').value;
+      if (detallesTarta) {
+        mensaje += `\n🎂 *Tarta Personalizada Adjunta:*\n`;
+        mensaje += `• Evento: ${evento}\n`;
+        mensaje += `• Tamaño: ${document.getElementById('tamano-tarta').value}\n`;
+        mensaje += `• Bizcocho: ${document.getElementById('sabor-bizcocho').value}\n`;
+        mensaje += `• Detalles: ${detallesTarta}\n`;
+      }
+
+      if (notas) mensaje += `\n📝 *Notas:* ${notas}\n`;
+
+      const telefono = "34690296955";
+      const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
